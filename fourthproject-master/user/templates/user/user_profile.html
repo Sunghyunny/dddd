@@ -20,13 +20,10 @@
             {% if profile_user.name is not None %}
             {{profile_user.name}} {{profile_user.last_name}} <br>
             {% endif %}
-        <h3>키:</h3>
-        {% if profile_user.profile.height %}
-        <h3>{{profile_user.profile.height}}</h3>
+        <h3>성별 : </h3>
+        <h3>키:{% if profile_user.profile.height %} {{profile_user.profile.height}}</h3>
         {% endif %}
-        <h3>몸무게:</h3>
-        {% if profile_user.profile.weight %}
-        <h3>{{profile_user.profile.weight}}</h3>
+        <h3>몸무게:  {% if profile_user.profile.weight %} {{profile_user.profile.weight}}</h3>
         {% endif %}
 
         </h3>

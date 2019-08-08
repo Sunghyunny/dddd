@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'ckeditor_uploader',
     'user',
     'blog',
+    'imagekit',
+    'posts',
 ]
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
